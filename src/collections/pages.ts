@@ -1,5 +1,5 @@
 import { Access, CollectionConfig } from 'payload';
-import { UserRole } from './users';
+import { UserRole } from './users.js';
 
 const tenantAccess: Access = ({ req }) => {
   const user = req.user as { role?: UserRole; site?: string } | null;
