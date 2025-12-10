@@ -14,6 +14,10 @@ const start = async () => {
 
   const app = express();
 
+  if (!process.env.MONGODB_URI) {
+    throw new Error('MONGODB_URI is not set');
+  }
+
   const payload = await getPayload({
     config: payloadConfig,
     onInit: (pl) => {

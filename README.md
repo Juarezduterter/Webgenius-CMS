@@ -31,6 +31,8 @@ FRONTEND_ORIGINS=http://localhost:3000
 * `PUBLIC_URL` : URL publique de l’instance (utilisée par l’admin)
 * `FRONTEND_ORIGINS` : domaines autorisés (CORS / CSRF), séparés par virgule
 
+> ⚠️ Le serveur refuse de démarrer si `PAYLOAD_SECRET` ou `MONGODB_URI` est manquant, afin d’éviter les démarrages incomplets.
+
 ---
 
 ## Installation et lancement local
