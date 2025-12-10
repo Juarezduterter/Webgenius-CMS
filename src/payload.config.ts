@@ -2,9 +2,9 @@ import path from 'path';
 import { buildConfig } from 'payload';
 import { postgresAdapter } from '@payloadcms/db-postgres';
 import { lexicalEditor } from '@payloadcms/richtext-lexical';
-import { Pages } from './collections/pages';
-import { Sites } from './collections/sites';
-import { Users } from './collections/users';
+import { Pages } from './collections/pages.js';
+import { Sites } from './collections/sites.js';
+import { Users } from './collections/users.js';
 
 const FRONTEND_ORIGINS = process.env.FRONTEND_ORIGINS?.split(',').map((origin) => origin.trim()).filter(Boolean) ?? [];
 
